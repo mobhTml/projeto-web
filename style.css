@@ -23,7 +23,7 @@ section#caixa{
     transform: translate(-50%, -50%);
     position: absolute;
     background-image: url(imagems/tela-tablet.png);
-    background-size: cover;
+    
 
     height: 627px;
     width: 510px;
@@ -34,18 +34,24 @@ iframe#lap{
     left: 74px;
     width: 369px;
     height: 500px;
-    background-size: cover;
+   
 
 }
 
 section#conteudo{
-    text-align: right;
+    text-align: left;
 }
 
 section#conteudo img {
     width: 50px;
     margin: 10px;
     border-radius: 50%;
-    margin: auto;
-    left: -70px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.082);
+}
+
+section#conteudo img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.199);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
+    transition: transform .3s, border .1s;
 }
